@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <button class="ribbon" id="saveContactBtn">Save to Contacts</button>
+
+    <main class="container">
+
+        <section class="profile">
+            <div class="avatar">
+                <img src="IMAGE/Screenshot from 2025-12-16 10-32-24.png" alt="profile Picture">
+            </div>
+
+            <h1 class="company-name">SERKAN DAYAN </h1>
+            <p class="company-bio">
+                Assoc. Prof. Erciyes Üniversitesi
+               <span style="display:block;">Kayseri, Türkiye </span> 
+               <span style="display: block;">Research focused on catalysis, green chemistry, and inorganic chemistry.</span>
+            </P>
+        </section>
+    </main>
+    <div class="grid">
+      <!-- Cell Phone -->
+       <a href="tel:+905062772175" target="_blank" class="tile">
+        <i class="fa-solid fa-mobile"></i>
+        <span>Cell Phone</span>
+       </a>
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/doc.dr.serkandayan" target="_blank" class="tile">
+    <i class="fa-brands fa-instagram"></i>
+    <span>Instagram</span>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:serkandayan7@gmail.com"
+     target="_blank" class="tile">
+    <i class="fa-solid fa-envelope"></i>
+    <span>Email</span>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/905062772175"
+     target="_blank"
+     class="tile">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <!-- Website -->
+   <a href="https://dentbiochem.com"
+   target="_blank" class="tile">
+   <i class="fa-solid fa-globe"></i>
+   <span>DentBioChem</span>
+   </a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/@harardevcenter"
+     target="_blank"
+     class="tile">
+    <i class="fa-brands fa-youtube"></i>
+    <span>YouTube</span>
+  </a>
+
+  <!-- Google Scholar -->
+  <a href="https://scholar.google.com/citations?user=n8z_AJAAAAAJ&hl=tr"
+     target="_blank"
+     class="tile">
+    <i class="fa-brands fa-google-scholar"></i>
+    <span>Google scholar</span>
+  </a>
+  
+  <!-- LinkedIn -->
+   <a href="https://www.linkedin.com/in/serkan-d-a6784119a/"
+   target="_blank" class="tile">
+   <i class="fa-brands fa-linkedin"></i>
+   <span>LinkedIn</span>
+   </a> 
+
+   <!-- CV -->
+    <a href="pdf/Profile.pdf" 
+    target="_blank" class="tile">
+      <i class="fa-solid fa-file"></i>
+      <span>CV</span>
+    </a>
+  <!--BANK / IBAN--> 
+  <!-- Ziraat Bank -->
+   <button class="tile bank" type="button" 
+   data-bank="Ziraat bank" data-iban="TR94 0006 4000 0015 30208759 11">
+   <i class="fa-solid fa-building-columns"></i>
+   <span>Ziraat Bank</span>
+   </button>
+
+   <button class="tile bank" type="button"
+   data-bank="Vakif bank" data-iban="">
+   <i class="fa-solid fa-building-columns"></i>
+   <span>Vakif Bank (TRY)</span>
+</button>
+<button class="tile bank" type="button"
+data-bank="vakif bank (EUR)" data-iban="">
+<i class="fa-solid fa-money-bill-transfer"></i>
+<span>Vakif Bank (EUR)</span>
+</button>
+</button>
+</div>
+<div class="toast" id="toast" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
